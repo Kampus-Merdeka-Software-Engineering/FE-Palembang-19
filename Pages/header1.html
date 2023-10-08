@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/navstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="icon" href="/Images/favicon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="transparent-bg">
+      <div class="main-content">
+        <ul>
+          <li class="logo">
+            <a href="/Pages/index1.html">
+              <div id="logo"><img src="/Images/logo.png" alt="Home" /></div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="/Pages/tentangkami1.html">Tentang Kami</a>
+          </li>
+          <li class="item"><a href="/Pages/send1.html">Kirim Paket</a></li>
+          <li class="item"><a href="/Pages/Cekresi1.html">Cek Resi</a></li>
+          <li class="item"><a href="/Pages/location1.html">Cek Lokasi</a></li>
+          <li class="item"><a href="/Pages/layanan1.html">Layanan</a></li>
+          <li class="item btn-login">
+            <a href="/Pages/index.html">Keluar</a>
+          </li>
+          <li class="toggle">
+            <a href="#"><span class="bars"></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- BACKGROUND SCRIPT -->
+    <script>
+      const navbar = document.querySelector("nav");
+      const scrollThreshold = 100;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > scrollThreshold) {
+          navbar.classList.add("white-bg");
+          navbar.classList.remove("transparent-bg");
+        } else {
+          navbar.classList.add("transparent-bg");
+          navbar.classList.remove("white-bg");
+        }
+      });
+    </script>
+  </body>
+</html>

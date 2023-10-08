@@ -6,10 +6,12 @@ body,
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container1 p {
   font-size: 40px;
+  color: #354f52;
 }
 
 .container1 {

@@ -22,7 +22,7 @@ function showLoading(event, button) {
     button.innerHTML = "Pembayaran dikonfirmasi";
 
     setTimeout(function () {
-      window.location.href = "/Pages/index1.html";
+      window.location.href = "index1.html";
     }, 3000);
   }, 3000);
 }

@@ -843,6 +843,22 @@ b {
   color: #555;
 }
 
+.notiferror {
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px 20px;
+  color: #71192f;
+  background-color: #fce8db;
+  border: 1px solid #ef665b;
+  position: fixed;
+  top: 15%;
+  left: 41.5%;
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
@@ -935,5 +951,8 @@ b {
     width: 70%;
     max-width: 1000px;
     margin: 150px 0;
+  }
+  .notiferror {
+    left: 26%;
   }
 }

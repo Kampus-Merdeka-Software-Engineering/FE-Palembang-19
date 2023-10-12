@@ -75,7 +75,7 @@
               <input
                 type="text"
                 name="nama-lengkap"
-                id="nama-lengkap"
+                id="nama-lengkap2"
                 placeholder=""
                 required
               />
@@ -85,7 +85,7 @@
               <input
                 type="text"
                 name="alamat"
-                id="alamat"
+                id="alamat2"
                 placeholder=""
                 required
               />
@@ -95,7 +95,7 @@
               <input
                 type="text"
                 name="no-telepon"
-                id="no-telepon"
+                id="no-telepon2"
                 placeholder=""
                 required
               />
@@ -164,8 +164,8 @@
         </div>
       </form>
       <div class="send-btn">
-        <a href="#popup">
-          <button>
+        <a href="#">
+          <button id="btnsend">
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
                 <svg
@@ -231,12 +231,14 @@
               class="click-button"
               onclick="showLoading(event, this)"
             >
-              Bayar Sekarang - Rp(TOTAL)
+              Bayar Sekarang
             </button>
           </form>
         </div>
       </div>
     </div>
+
+    <div class="notiferror" id="notiferror">Semua kolom wajib diisi!</div>
 
     <!--Footer-->
     <div id="foot-placeholder"></div>
@@ -249,5 +251,7 @@
 
     <script src="/js/payment.js"></script>
     <!--end of Footer-->
+
+    <script src="/js/validation.js"></script>
   </body>
 </html>

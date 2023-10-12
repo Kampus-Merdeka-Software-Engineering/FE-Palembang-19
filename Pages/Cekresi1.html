@@ -51,6 +51,9 @@
             <i class="searchInputIcon fa fa-search"></i>
           </form>
         </div>
+        <div class="notiferror">
+          <p id="notiferror">Resi tidak ditemukan!</p>
+        </div>
       </div>
 
       <!--MAIN CONTENT RESI-->
@@ -59,25 +62,26 @@
           <div class="column">
             <div class="img-1">
               <figure>
-                <img src="/Images/Frame5.png" alt="logo" />
-                <div class="garis"></div>
+                <img id="img1" src="/Images/Frame5.png" alt="logo" />
+                <div id="grs1" class="garis1"></div>
                 <p id="text">Pesanan <br />Dibuat</p>
               </figure>
             </div>
           </div>
           <div class="column">
-            <div class="img-2">
+            <div class="img-1">
               <figure>
-                <img src="/Images/Frame6.png" alt="logo" />
+                <img id="img2" src="/Images/Frame6.png" alt="logo" />
               </figure>
               <p id="text">Dalam <br />pengiriman</p>
             </div>
           </div>
           <div class="column">
-            <div class="img-2">
+            <div class="img-1">
               <figure>
-                <img src="/Images/Frame7.png" alt="logo" />
+                <img id="img3" src="/Images/Frame7.png" alt="logo" />
               </figure>
+              <div id="grs2" class="garis2"></div>
               <p id="text">Pesanan <br />Diterima</p>
             </div>
           </div>
@@ -91,11 +95,11 @@
           <table style="width: 100%">
             <tr>
               <td>No. Resi</td>
-              <td>HRZNXXXXXXX</td>
+              <td id="resi"></td>
             </tr>
             <tr>
               <td>Nama Penerima</td>
-              <td>Jos Bandos</td>
+              <td id="penerima"></td>
             </tr>
           </table>
         </section>
@@ -114,5 +118,7 @@
       });
     </script>
     <!--end of Footer-->
+
+    <script src="/js/cekresi.js"></script>
   </body>
 </html>

@@ -41,7 +41,7 @@
               <input
                 type="text"
                 name="text"
-                id="text"
+                id="nama"
                 class="input-field"
                 placeholder="Nama"
               />
@@ -52,7 +52,7 @@
               <input
                 type="text"
                 name="text"
-                id="text"
+                id="email"
                 class="input-field"
                 placeholder="E-mail"
               />
@@ -81,8 +81,8 @@
             </div>
           </form>
           <div class="btn-log-in">
-            <a href="/Pages/login.html">
-              <button>Daftar</button>
+            <a id="toLogin" href="#">
+              <button id="btnregis">Daftar</button>
             </a>
           </div>
         </div>
@@ -97,6 +97,11 @@
         </div>
       </div>
     </div>
+
+    <div class="notiferror" id="notiferror">Semua kolom wajib diisi!</div>
+
     <footer class="registergreen-bg">TEST</footer>
+
+    <script src="/js/registration-validation.js"></script>
   </body>
 </html>

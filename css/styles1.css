@@ -931,7 +931,8 @@ b {
     margin: 120px 0;
   }
   .green-bg,
-  .form-text-top {
+  .form-text-top,
+  .registergreen-bg {
     display: none;
   }
   .form-container {

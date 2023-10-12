@@ -27,7 +27,7 @@ searchInput.addEventListener("keypress", function (event) {
       gariskanan.style.backgroundColor = "#84a98c";
       container2.style.display = "flex";
       resi.textContent = inputValue;
-      penerima.textContent = "Fellia Puteri";
+      penerima.textContent = "Fellia";
       notiferror.style.display = "none";
     } else if (inputValue === "HRZN002") {
       imgdibuat.style.backgroundColor = "#84a98c";

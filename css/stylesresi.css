@@ -99,6 +99,7 @@ body {
 #proses-pengiriman {
   flex: 1;
   align-items: center;
+  margin-left: 25%;
 }
 #informasi-paket {
   background-color: #cad2c5;
@@ -109,7 +110,7 @@ body {
 }
 .column {
   float: left;
-  width: 31%;
+  width: 20%;
   padding: 10px;
   height: 30px;
   display: grid;
@@ -117,11 +118,12 @@ body {
   gap: 4px;
   align-items: center;
   justify-items: center;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .container-3 img {
   border-radius: 50%;
   background: #fff;
+  width: 50px;
 }
 #text {
   text-align: center;
@@ -138,6 +140,7 @@ body {
   max-width: 1071px;
   margin: 0 auto;
   color: #354f52;
+  flex-wrap: wrap;
 }
 
 table {
@@ -157,7 +160,7 @@ td {
 .garis1 {
   position: absolute;
   top: 34%;
-  width: 30%;
+  width: 15%;
   right: 50%;
   height: 5px;
   background-color: #ffffff;
@@ -167,8 +170,8 @@ td {
 .garis2 {
   position: absolute;
   top: 34%;
-  width: 30%;
-  right: 20%;
+  width: 17%;
+  right: 31%;
   height: 5px;
   background-color: #ffffff;
   z-index: -1;
@@ -178,4 +181,37 @@ td {
   display: none;
   font-size: 15px;
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .search .searchInput {
+    width: 100%;
+  }
+  #proses-pengiriman {
+    margin: 0;
+  }
+  .column {
+    width: 25%;
+  }
+  #text {
+    font-size: 15px;
+  }
+  .garis1 {
+    right: 58%;
+    width: 16%;
+    top: 39%;
+  }
+  .garis2 {
+    right: 30%;
+    top: 39%;
+  }
+  .container-3 {
+    height: 200px;
+  }
+  table p {
+    font-size: 100px;
+  }
+  .text {
+    font-size: 12px;
+  }
 }

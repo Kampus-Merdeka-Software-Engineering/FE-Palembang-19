@@ -49,6 +49,14 @@ searchInput.addEventListener("keypress", function (event) {
       resi.textContent = inputValue;
       penerima.textContent = "Mala";
       notiferror.style.display = "none";
+    } else if (inputValue === "") {
+      imgdibuat.style.backgroundColor = "#fff";
+      imgpengiriman.style.backgroundColor = "#fff";
+      imgditerima.style.backgroundColor = "#fff";
+      gariskiri.style.backgroundColor = "#fff";
+      gariskanan.style.backgroundColor = "#fff";
+      container2.style.display = "none";
+      notiferror.style.display = "none";
     } else {
       imgdibuat.style.backgroundColor = "#fff";
       imgpengiriman.style.backgroundColor = "#fff";

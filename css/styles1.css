@@ -843,6 +843,16 @@ b {
   color: #555;
 }
 
+.container-error {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  display: flex;
+  width: 100%;
+  top: 15%;
+}
+
 .notiferror,
 .notifwrong {
   justify-content: center;
@@ -853,9 +863,6 @@ b {
   background-color: #fce8db;
   border: 1px solid #ef665b;
   position: fixed;
-  top: 15%;
-  left: 41.5%;
-  display: none;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -953,9 +960,5 @@ b {
     width: 70%;
     max-width: 1000px;
     margin: 150px 0;
-  }
-  .notiferror,
-  .notifwrong {
-    left: 26%;
   }
 }

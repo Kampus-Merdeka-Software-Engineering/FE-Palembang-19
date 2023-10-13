@@ -197,13 +197,14 @@ td {
     font-size: 15px;
   }
   .garis1 {
-    right: 58%;
-    width: 16%;
+    right: 50%;
+    width: 25%;
     top: 39%;
   }
   .garis2 {
-    right: 30%;
+    right: 25%;
     top: 39%;
+    width: 25%;
   }
   .container-3 {
     height: 200px;

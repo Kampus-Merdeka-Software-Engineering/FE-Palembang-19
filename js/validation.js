@@ -36,7 +36,7 @@ btnsend.addEventListener("click", function (event) {
       setTimeout(function () {
         notiferror.style.display = "none";
       }, 500);
-    }, 5000);
+    }, 9000);
   } else {
     notiferror.style.display = "none";
     linkElement.href = "#popup";

@@ -843,7 +843,8 @@ b {
   color: #555;
 }
 
-.notiferror {
+.notiferror,
+.notifwrong {
   justify-content: center;
   text-align: center;
   border-radius: 8px;
@@ -953,7 +954,8 @@ b {
     max-width: 1000px;
     margin: 150px 0;
   }
-  .notiferror {
+  .notiferror,
+  .notifwrong {
     left: 26%;
   }
 }
